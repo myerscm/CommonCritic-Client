@@ -10,6 +10,8 @@ Router.map(function () {
   this.route('sign-up')
   this.route('sign-in')
   this.route('change-password')
+  this.route('posts')
+  this.route('post-create')
 })
 
 export default Router
