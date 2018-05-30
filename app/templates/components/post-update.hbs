@@ -1,11 +1,13 @@
 {{#if editing}}
-  {{post-forms post=post submit="submit"}}
+  {{update-forms post=post update="update" closeEdit="closeEdit"}}
 {{else}}
-<div {{action "edit"}}>
-<p>Title: {{post.reviewTitle}}</p>
+<div>
+<h2 {{action "edit"}}>Title: {{post.reviewTitle}}</h2>
 <p>Category: {{post.category}}</p>
 <p>Text: {{post.reviewText}}</p>
 <p>Post Author: {{post.user.email}}</p>
+{{log user}}
+{{log post.user.email}}
 <p>ID: {{post.id}}</p>
 <button class='btn-xs btn-danger' {{action 'deletePost'}}>Delete</button>
 </div>

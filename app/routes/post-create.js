@@ -1,11 +1,10 @@
 import Route from '@ember/routing/route'
 
 export default Route.extend({
-  model () {
-    return this.get('store').createRecord('post', {})
-  },
+  // newPost: '',
   actions: {
     submit (post) {
+      // this.get('store').createRecord('post', {})
       return post.save()
       .then(() => this.transitionTo('posts'))
       .then(() => {

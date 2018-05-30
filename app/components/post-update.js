@@ -5,7 +5,10 @@ export default Component.extend({
     edit () {
       this.set('editing', true)
     },
-    submit (post) {
+    closeEdit () {
+      this.set('editing', false)
+    },
+    update (post) {
       post.save()
         .then(() => this.set('editing', false))
         .then(() => this.get('flashMessages').success('Post Saved'))
