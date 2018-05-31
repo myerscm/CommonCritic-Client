@@ -48,7 +48,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/CommonCritic-Client'
     ENV.locationType = 'hash'
-    ENV.apiHost = 'https://commoncritic-rails.herokuapp.com/'
+    ENV.apiHost = 'https://commoncritic-rails.herokuapp.com'
   }
 
   return ENV
