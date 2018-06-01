@@ -10,9 +10,6 @@ export default Component.extend({
       if (this.get('reviewTitle')) { this.set('post.reviewTitle', this.get('reviewTitle')) }
       if (this.get('category')) { this.set('post.category', this.get('category')) }
       if (this.get('reviewText')) { this.set('post.reviewText', this.get('reviewText')) }
-      console.log(this.get('reviewText'))
-      console.log(this.get('category'))
-      console.log(this.get('reviewTitle'))
       if (!this.get('reviewTitle') && !this.get('category') && !this.get('reviewText')) {
         this.get('flashMessages').danger('Your review is empty! Try updating it with some content!')
       } else {

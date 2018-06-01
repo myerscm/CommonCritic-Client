@@ -1,17 +1,18 @@
-{{log post.editable}}
 {{#if post.editable}}
-<h2 {{action "edit"}}>Title: {{post.reviewTitle}}</h2>
-<h4> You wrote this review! Click on the title for editing options.</h4>
+<div class="reviews">
+<h2 class="titles usertitles" {{action "edit"}}>Title: {{post.reviewTitle}}</h2>
+<h4 id="userpost"> You wrote this review! Click on the title for editing options.</h4>
 <p>Category: {{post.category}}</p>
 <p>Text: {{post.reviewText}}</p>
 <p>Post Author: {{post.user.email}}</p>
 <p>ID: {{post.id}}</p>
+</div>
   {{#if editing}}
     {{update-forms post=post update="update" deletePost='deletePost' closeEdit="closeEdit"}}
   {{/if}}
 {{else}}
-  <div>
-    <h2>Title: {{post.reviewTitle}}</h2>
+  <div class="reviews">
+    <h2 class="titles">Title: {{post.reviewTitle}}</h2>
     <p>Category: {{post.category}}</p>
     <p>Text: {{post.reviewText}}</p>
     <p>Post Author: {{post.user.email}}</p>

@@ -1,1 +1,39 @@
 @import "ember-bootstrap/bootstrap";
+
+body {
+  color: yellow;
+  background-color: cornflowerblue;
+  font-family: 'Nunito', sans-serif;
+}
+
+button {
+  color: black;
+}
+
+a {
+  color: white;
+}
+.flash-message {
+  position: fixed;
+  z-index: 1;
+}
+.titles {
+  color: cornflowerblue;
+}
+.usertitles:hover {
+  text-decoration: underline;
+}
+.reviews {
+  background-color: cornsilk;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+}
+#userpost {
+text-decoration: underline;
+}
+#greeting {
+  color: black;
+}
+#navigation {
+  background-color: cornsilk;
+}

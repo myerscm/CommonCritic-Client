@@ -1,8 +1,10 @@
+<form {{action "submit" on='submit'}}>
 <h2>New Review</h2>
 <label>Review Title</label>
-{{input type="text" placeholder="Post Title" value=reviewTitle}}
+{{input required=true type="text" placeholder="Post Title" value=reviewTitle}}
 <label>Review Category</label>
-{{input type="text" placeholder="Category" value=category}}
+{{input required=true type="text" placeholder="Category" value=category}}
 <label>Review Text</label>
-{{input type="text" placeholder="Review Body" value=reviewText}}
-<button {{action "submit"}}>Post Review</button>
+{{input required=true type="text" placeholder="Review Body" value=reviewText}}
+<button class="btn btn-primary" type="submit">Post Review</button>
+</form>
